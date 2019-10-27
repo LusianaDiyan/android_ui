@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:paddingTop="20dp"
+    android:background="#faebd7"
+    tools:context="applusiana.uts2018.Laptop">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Harga Laptop"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etHarga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="PPN"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <RadioGroup
+            android:id="@+id/ppn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/ppn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2% PPN" />
+
+            <RadioButton
+                android:id="@+id/ppn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3% PPN" />
+
+            <RadioButton
+                android:id="@+id/ppn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4% PPN" />
+
+            <RadioButton
+                android:id="@+id/ppn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5% PPN" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tambahan"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/mouse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mouse Game (Rp. 100.000)" />
+
+            <CheckBox
+                android:id="@+id/harddisk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harddisk (Rp. 550.000)" />
+
+            <CheckBox
+                android:id="@+id/os"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OS (Rp. 350.000)" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HITUNG"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffcb85"
+        android:layout_gravity="center"/>
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Total Harga Laptop"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/hargaLaptop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_kembali"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff68f"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
